@@ -103,6 +103,7 @@ nav.scrolled {
 }
 
 .list-region {
+    margin-left: 15%;
     flex: 1;
     float: left;
     flex-direction: column;   /* Permet de disposer les éléments en colonne */
@@ -199,6 +200,88 @@ nav.scrolled {
 }
 
 .s-contact {
+    list-style: none;
     color: darkslategray;
     font-size: 1.2em;
+}
+
+body {
+    margin: 0;                     /* Suppression de la marge par défaut du corps */
+    font-family: Arial, sans-serif; /* Police pour tout le corps */
+}
+
+.footer {
+    margin-top: 5%;
+    background-color: white; /* Couleur de fond sombre */
+    color: black;              /* Couleur du texte */
+    padding: 40px 20px;       /* Espacement intérieur */
+    text-align: center;        /* Centre le texte */
+}
+
+.footer-container {
+    display: flex;                      /* Utilisation de flexbox pour la disposition */
+    justify-content: space-around;      /* Espacement entre les éléments */
+    max-width: 1200px;                 /* Largeur maximale du conteneur */
+    margin: 0 auto;                    /* Centre le conteneur */
+}
+
+.footer-info, .footer-links, .footer-social {
+    flex: 1;                          /* Éléments flexibles qui prennent un espace égal */
+    padding: 0 20px;                 /* Espacement autour des sections */
+}
+
+.footer h3 {
+    margin-bottom: 15px;             /* Espacement sous les titres */
+    font-size: 1.5em;                /* Taille de police pour les titres */
+    text-transform: uppercase;        /* Transforme le texte en majuscules */
+    border-bottom: 2px solid #ecf0f1; /* Bordure sous le titre */
+    padding-bottom: 10px;            /* Espacement sous le titre */
+}
+
+.footer a {
+    color: #ecf0f1;                  /* Couleur des liens */
+    text-decoration: none;           /* Supprime le soulignement */
+    transition: color 0.3s;          /* Transition pour l'effet de survol */
+}
+
+.footer a:hover {
+    color: #3498db;                  /* Couleur au survol */
+    text-decoration: underline;      /* Souligne les liens au survol */
+}
+
+.footer ul {
+    list-style-type: none;           /* Supprime les puces */
+    padding: 0;                      /* Supprime le padding par défaut */
+}
+
+.footer li {
+    margin: 10px 0;                  /* Espacement entre les éléments de la liste */
+}
+
+.footer-bottom {
+    margin-top: 30px;                /* Espacement au-dessus de la ligne du bas */
+    font-size: 0.9em;                /* Taille de police pour le texte du bas */
+}
+
+.footer-bottom p {
+    margin: 0;                       /* Supprime la marge par défaut */
+}
+
+/* Styles pour les icônes des réseaux sociaux */
+.social-links {
+    display: flex;                   /* Flexbox pour les réseaux sociaux */
+    justify-content: center;         /* Centre les icônes */
+    padding: 0;                     /* Supprime le padding par défaut */
+}
+
+.social-icon {
+    margin: 0 10px;                 /* Espacement entre les icônes */
+    padding: 10px;                  /* Espacement intérieur pour les icônes */
+    background-color: #34495e;      /* Couleur de fond des icônes */
+    border-radius: 5px;             /* Coins arrondis */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+.social-icon:hover {
+    background-color: #2980b9;      /* Couleur de fond au survol */
 }

@@ -52,7 +52,8 @@ function ajouterContenu(donnee){
     list.append(v)
     v = creation("h1", "Contacter :", "h-map")
     v.style.textAlign = "left"
-    v.style.marginBottom ="20px"
+    v.style.marginBottom ="2%"
+    v.style.fontSize ="1.4em"
     list.append(v)
     list.append(creation("ul"))
     if (donnee.contacts !== undefined){
