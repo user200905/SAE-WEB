@@ -1,0 +1,200 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.divider {
+    float: left; /* Flotte à gauche */
+    height: 700px; /* Hauteur de la barre */
+    width: 2px; /* Épaisseur de la barre */
+    background-color: gray; /* Couleur de la barre */
+    margin: 0 20px; /* Espacement autour de la barre */
+}
+
+
+
+.logo img {
+    padding: 0;
+    width: 80px; /* Ajuste la largeur selon ta préférence */
+    height: auto; /* Garde les proportions */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+
+nav.scrolled {
+    background-color: #333333; /* Change en noir après défilement */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links li:hover {
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+
+}
+
+.donation-button {
+    background-color: #1ed760;
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.header {
+    text-align: center;
+    padding: 15px;
+}
+
+.map {
+    background-color: #ebf6ff;
+    margin-top: 160px;
+    flex: 2; /* Prendre 2/3 de l'espace */
+    overflow: hidden; /* Empêche le défilement */
+    display: flex; /* Utilisation de flexbox pour la carte */
+    justify-content: center; /* Centre le contenu */
+    align-items: center; /* Centre le contenu verticalement */
+}
+
+.map-- {
+    margin-left: 20px;
+    margin-top: 40px;
+    width: 50%;
+    float: left;
+}
+
+.map-- path {
+    fill: darkslategray;
+    stroke: white;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
+.map-- .active path{
+    fill: greenyellow;
+}
+
+.list-region {
+    flex: 1;
+    float: left;
+    flex-direction: column;   /* Permet de disposer les éléments en colonne */
+    justify-content: flex-start;
+}
+
+.h4-map {
+    font-weight: lighter;
+    color: darkslategray;
+    font-size: 16px;
+    margin: 20px;
+}
+
+.h-map {
+    color: #000647;
+    text-align: center;
+    font-size: 40px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.haut {
+    margin-top: 150px;
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.titre-haut {
+    width: 50%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #293147;
+}
+
+.subtitle {
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.4rem;
+    color: #5da9d8;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.missions {
+    display: flex;
+    flex-wrap: wrap; /* Permet de renvoyer les éléments à la ligne */
+    justify-content: space-around; /* Espace entre les éléments */
+}
+
+.mission-item {
+    width: 45%; /* 45% pour que deux éléments rentrent sur une ligne */
+    margin-bottom: 20px; /* Espacement entre les lignes */
+    text-align: center;
+}
+
+.mission-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #2a3d52;
+}
+
+.icon {
+    border-radius: 100px;
+    background-color: #1e1647;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.btn-benevole {
+    margin-top: 20px;
+    background-color: #17a2b8;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.btn-benevole:hover {
+    background-color: #138496;
+}
