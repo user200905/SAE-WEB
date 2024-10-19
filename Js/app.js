@@ -1,4 +1,5 @@
 import TabContacts from "/js/ContactDonnées.js"
+import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
 
 const navbar = document.getElementById('navbar');
@@ -34,6 +35,10 @@ function findDonnees(){
  *
  * @param {objet} donnee
  */
+
+const width = window.innerWidth;
+const height = window.innerHeight;
+
 
 function creation(type, contenu, Class) {
     let newElmt = document.createElement(type)
