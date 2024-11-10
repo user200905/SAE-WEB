@@ -13,8 +13,8 @@ header {
 
 .logo img {
     padding: 0;
-    width: 80px; /* Ajuste la largeur selon ta préférence */
-    height: auto; /* Garde les proportions */
+    width: 80px;
+    height: auto;
 }
 
 nav {
@@ -23,19 +23,17 @@ nav {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 9px;
-    background-color: black;
+    background-color: #333333;
     transition: background-color 0.3s ease;
 }
 
-
 nav.scrolled {
-    background-color: #333333; /* Change en noir après défilement */
+    background-color: #333333;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-
 }
 
 .nav-links li {
@@ -47,12 +45,11 @@ nav.scrolled {
     text-decoration: none;
     font-size: 16px;
 }
+
 .nav-links li:hover {
     transition: transform 0.3s ease;
     transform: scale(1.1);
-
 }
-
 
 .donation-button {
     background-color: #1ed760;
@@ -62,29 +59,28 @@ nav.scrolled {
     font-weight: bold;
 }
 
-.image-acceuil {
+.image-form {
     display: flex;
     background-color: #ebf6ff;
     height: 100vh;
-
+    flex-direction: column; /* Adaptable en mobile */
 }
 
 .map {
     background-color: #ebf6ff;
     margin-top: 160px;
     width: 100%;
-    flex: 2; /* Prendre 2/3 de l'espace */
-    overflow: hidden; /* Empêche le défilement */
-    display: flex; /* Utilisation de flexbox pour la carte */
-    justify-content: center; /* Centre le contenu */
-    align-items: center; /* Centre le contenu verticalement */
+    flex: 2;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .map-- {
     margin-left: 20px;
     margin-top: 40px;
     width: 50%;
-    float: left;
 }
 
 .map-- path {
@@ -93,16 +89,18 @@ nav.scrolled {
     stroke-width: 1px;
     transition: fill 0.3s;
 }
-.map-- .active path{
+
+.map-- .active path {
     fill: greenyellow;
 }
 
 .list-region {
     margin-left: 15%;
     flex: 1;
-    float: left;
-    flex-direction: column;   /* Permet de disposer les éléments en colonne */
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
+    padding-right: 4px;
 }
 
 .h4-map {
@@ -117,7 +115,6 @@ nav.scrolled {
     font-weight: 700;
     color: #2a3d52;
     text-align: center;
-
 }
 
 * {
@@ -155,13 +152,13 @@ nav.scrolled {
 
 .missions {
     display: flex;
-    flex-wrap: wrap; /* Permet de renvoyer les éléments à la ligne */
-    justify-content: space-around; /* Espace entre les éléments */
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .mission-item {
-    width: 45%; /* 45% pour que deux éléments rentrent sur une ligne */
-    margin-bottom: 20px; /* Espacement entre les lignes */
+    width: 45%;
+    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -202,72 +199,72 @@ nav.scrolled {
 
 .footer {
     margin-top: 5%;
-    background-color: white; /* Couleur de fond sombre */
-    color: black;              /* Couleur du texte */
-    padding: 40px 20px;       /* Espacement intérieur */
-    text-align: center;        /* Centre le texte */
+    background-color: white;
+    color: black;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .footer-container {
-    display: flex;                      /* Utilisation de flexbox pour la disposition */
-    justify-content: space-around;      /* Espacement entre les éléments */
-    max-width: 100%;                 /* Largeur maximale du conteneur */
-    margin: 0 auto;                    /* Centre le conteneur */
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .footer-info, .footer-links, .footer-social {
-    flex: 1;                          /* Éléments flexibles qui prennent un espace égal */
-    padding: 0 20px;                 /* Espacement autour des sections */
+    flex: 1;
+    padding: 0 20px;
 }
 
 .footer h3 {
     color: #353231;
-    margin-bottom: 15px;             /* Espacement sous les titres */
-    font-size: 1.16em;                /* Taille de police pour les titres */
-    text-transform: uppercase;        /* Transforme le texte en majuscules */
-    border-bottom: 2px solid #ecf0f1; /* Bordure sous le titre */
-    padding-bottom: 10px;            /* Espacement sous le titre */
+    margin-bottom: 15px;
+    font-size: 1.16em;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
 }
 
 .footer a {
-    color: #323335;                  /* Couleur des liens */
-    text-decoration: none;           /* Supprime le soulignement */
-    transition: color 0.3s;          /* Transition pour l'effet de survol */
+    color: #323335;
+    text-decoration: none;
+    transition: color 0.3s;
 }
 
 .footer a:hover {
-    color: #3498db;                  /* Couleur au survol */
-    text-decoration: underline;      /* Souligne les liens au survol */
+    color: #3498db;
+    text-decoration: underline;
 }
 
 .footer ul {
-    list-style-type: none;           /* Supprime les puces */
-    padding: 0;                      /* Supprime le padding par défaut */
+    list-style-type: none;
+    padding: 0;
 }
 
 .footer li {
-    margin: 10px 0;                  /* Espacement entre les éléments de la liste */
+    margin: 10px 0;
 }
 
 .footer-bottom {
-    margin-top: 30px;                /* Espacement au-dessus de la ligne du bas */
-    font-size: 0.9em;                /* Taille de police pour le texte du bas */
+    margin-top: 30px;
+    font-size: 0.9em;
 }
 
 .footer-bottom p {
-    margin: 0;                       /* Supprime la marge par défaut */
+    margin: 0;
 }
 
-/* Styles pour les icônes des réseaux sociaux */
 .social-links {
-    display: flex;                   /* Flexbox pour les réseaux sociaux */
-    justify-content: center;         /* Centre les icônes */
-    padding: 0;                     /* Supprime le padding par défaut */
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
 .contact {
-    margin-top: 8%;
-    margin-left:20%;
+    margin-right: 8%;
+    margin-top: 15%;
+    margin-left: 8%;
     margin-bottom: 8%;
     display: flex;
     background-color: white;
@@ -280,6 +277,7 @@ nav.scrolled {
     padding: 20px;
     width: 50%;
 }
+
 .input-group {
     margin-bottom: 15px;
 }
@@ -323,4 +321,61 @@ textarea {
 
 .illustration {
     width: 80%;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1024px) {
+    .titre-haut, .h-map {
+        font-size: 2rem;
+    }
+    .image-form {
+        flex-direction: column;
+        height: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .map h4 {
+
+    }
+    .h4-map {
+        font-weight: lighter;
+        color: darkslategray;
+        font-size: 10px;
+        margin: 20px;
+    }
+
+    .h-map {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #2a3d52;
+        text-align: center;
+    }
+    .container-contact {
+        width: 100%;
+        margin-left: 0;
+    }
+    .illustration-container {
+        width: 0%;
+    }
+    .titre-haut, .subtitle {
+        width: 90%;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .titre-haut {
+        font-size: 1.8rem;
+    }
+    .map--, .subtitle {
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
 }

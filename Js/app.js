@@ -1,6 +1,4 @@
 import TabContacts from "/js/ContactDonnées.js"
-import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
-
 
 const navbar = document.getElementById('navbar');
 
@@ -93,10 +91,21 @@ map.addEventListener("mouseover", () => {
     })
 })
 
+// Test
 
-
-
-
-
-
+const test = document.querySelector(".email")
+const tab = ["@gmail.com"]
+const s = "^^^^^^^^@gmail.com"
+const b = s.endsWith(tab.at(0))
+console.log(b)
+test.addEventListener("change", (e) => {
+    const event_current = JSON.stringify(e.target.value)
+    for (const elmt of tab) {
+        console.log(event_current)
+        if (event_current.endsWith(elmt) === false){
+            console.log(event_current.endsWith(elmt))
+            console.log(event_current)
+        }
+    }
+})
 
