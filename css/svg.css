@@ -353,9 +353,6 @@ textarea {
 }
 
 @media (max-width: 768px) {
-    .map h4 {
-
-    }
     .h4-map {
         font-weight: lighter;
         color: darkslategray;
@@ -364,7 +361,7 @@ textarea {
     }
 
     .h-map {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 700;
         color: #2a3d52;
         text-align: center;
@@ -424,5 +421,3 @@ textarea {
         height: 40px;
     }
 }
-
-
