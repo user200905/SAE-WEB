@@ -91,21 +91,11 @@ map.addEventListener("mouseover", () => {
     })
 })
 
-// Test
+const burger = document.querySelector(".burger");
+const navLinks = document.querySelector(".nav-links");
 
-const test = document.querySelector(".email")
-const tab = ["@gmail.com"]
-const s = "^^^^^^^^@gmail.com"
-const b = s.endsWith(tab.at(0))
-console.log(b)
-test.addEventListener("change", (e) => {
-    const event_current = JSON.stringify(e.target.value)
-    for (const elmt of tab) {
-        console.log(event_current)
-        if (event_current.endsWith(elmt) === false){
-            console.log(event_current.endsWith(elmt))
-            console.log(event_current)
-        }
-    }
-})
+burger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
+
 
