@@ -1,6 +1,3 @@
-
-
-
 const TabContacts = [
     {
         id: "J",

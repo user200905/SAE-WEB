@@ -1,16 +1,5 @@
 import TabContacts from "/js/ContactDonnées.js"
 
-const navbar = document.getElementById('navbar');
-
-// Fonction pour ajouter une classe 'scrolled' après défilement
-window.onscroll = () => {
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
-};
-
 let map  = document.querySelector("#map")
 let paths  = document.querySelectorAll(".map-- a")
 
